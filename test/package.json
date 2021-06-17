@@ -7,8 +7,7 @@
     "test-node": "cross-env NODE_ENV=test mocha -r esm --preserve-symlinks -t 30000 -A -R ${REPORTER:-spec} --require test-mocha.js 10-api.js",
     "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary npm run test-node",
     "coverage-ci": "cross-env NODE_ENV=test nyc --reporter=lcovonly npm run test-node",
-    "coverage-report": "nyc report",
-    "lint": "eslint ."
+    "coverage-report": "nyc report"
   },
   "dependencies": {
     "bedrock": "^4.1.1",
@@ -18,8 +17,6 @@
     "bedrock-server": "^2.7.0",
     "bedrock-test": "^5.3.2",
     "cross-env": "^7.0.3",
-    "eslint": "^7.14.0",
-    "eslint-config-digitalbazaar": "^2.6.1",
     "nyc": "^15.1.0",
     "supertest": "^6.1.3"
   },
