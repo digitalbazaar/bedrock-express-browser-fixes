@@ -15,7 +15,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -30,7 +30,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure;'
         ];
       })
@@ -43,7 +43,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -58,7 +58,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure;'
         ];
       })
@@ -71,7 +71,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -86,7 +86,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure;'
         ];
       })
@@ -98,7 +98,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -113,7 +113,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
           'SameSite=None'
         ];
@@ -126,7 +126,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -140,7 +140,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
           'SameSite=None'
         ];
@@ -153,7 +153,7 @@ describe('SameSite Tests', () => {
     function handler(req, res) {
       res.setHeader('Set-Cookie', [
         '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-        'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
         'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
         'SameSite=None'
       ]);
@@ -167,7 +167,7 @@ describe('SameSite Tests', () => {
       .expect(res => {
         res.headers['set-cookie'] = [
           '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
-          'veres-wallet.sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
+          'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrb' +
           'xbprjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
           'SameSite=None'
         ];
