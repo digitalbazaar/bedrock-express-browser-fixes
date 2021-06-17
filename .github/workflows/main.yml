@@ -37,9 +37,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
+        cd test
         npm install
     - name: Run test with Node.js ${{ matrix.node-version }}
       run: |
+        cd test
         npm run test-node
   # coverage:
   #   needs: [test-node]
