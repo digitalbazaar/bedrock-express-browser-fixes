@@ -2,20 +2,18 @@
  * Copyright (c) 2015-2018 Digital Bazaar, Inc. All rights reserved.
  */
 const bedrock = require('bedrock');
-// const config = bedrock.config;
 require('bedrock-express');
 require('bedrock-express-browser-fixes');
 
-// config.server.port = 47080;
-// config.server.httpPort = 47443;
-// config.server.host = 'localhost:47443';
-// config.server.baseUri = 'https://' + config.server.host;
-
 bedrock.events.on('bedrock-express.configure.routes', app => {
-  console.log('ROUTE EVENT CALLED');
   app.get('/test', (req, res) => {
-    console.log('TEST GET');
-    console.log({req, res});
+    res.setHeader('Set-Cookie', [
+      '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
+      'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+      'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
+      'SameSite=None'
+    ]);
+    res.send('GET test');
   });
 });
 
