@@ -1,10 +1,10 @@
 /*
  * Copyright (c) 2015-2018 Digital Bazaar, Inc. All rights reserved.
  */
-import bedrock from 'bedrock';
+const bedrock = require('bedrock');
 // const config = bedrock.config;
-import 'bedrock-express';
-import 'bedrock-express-browser-fixes';
+require('bedrock-express');
+require('bedrock-express-browser-fixes');
 
 // config.server.port = 47080;
 // config.server.httpPort = 47443;
@@ -19,5 +19,5 @@ bedrock.events.on('bedrock-express.configure.routes', app => {
   });
 });
 
-import 'bedrock-test';
+require('bedrock-test');
 bedrock.start();

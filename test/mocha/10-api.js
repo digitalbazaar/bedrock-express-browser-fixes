@@ -1,12 +1,12 @@
 /*
  * Copyright (c) 2020-2021 Digital Bazaar, Inc. All rights reserved.
  */
-import bedrock from 'bedrock';
+const bedrock = require('bedrock');
 const config = bedrock.config;
-import {safariSameSiteFix} from 'bedrock-express-browser-fixes';
+const {safariSameSiteFix} = require('bedrock-express-browser-fixes');
 // import request from 'supertest';
-import request from 'request';
-import http from 'http';
+const request = require('request');
+const http = require('http');
 // import 'bedrock-express-browser-fixes';
 
 const mockNext = function() {};
