@@ -10,12 +10,12 @@
     "coverage-report": "nyc report"
   },
   "dependencies": {
-    "@digitalbazaar/http-client": "^1.1.0",
-    "bedrock": "^4.1.1",
-    "bedrock-express": "^4.0.0",
+    "@digitalbazaar/http-client": "^2.0.0",
+    "bedrock": "^4.4.3",
+    "bedrock-express": "^6.2.0",
     "bedrock-express-browser-fixes": "file:..",
-    "bedrock-server": "^2.7.0",
-    "bedrock-test": "^5.3.2",
+    "bedrock-server": "^3.1.0",
+    "bedrock-test": "^6.0.0",
     "cross-env": "^7.0.3",
     "nyc": "^15.1.0"
   },
