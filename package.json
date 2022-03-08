@@ -1,6 +1,6 @@
 {
   "name": "bedrock-express-browser-fixes",
-  "version": "1.0.1-0",
+  "version": "1.1.0",
   "description": "A Bedrock module for browser fixes.",
   "main": "./lib",
   "scripts": {
