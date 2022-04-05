@@ -12,14 +12,14 @@
 
 ## Install
 
-- Node.js 12+ is required.
+- Node.js 14+ is required.
 
 ### NPM
 
 To install via NPM:
 
 ```
-npm install bedrock-express-browser-fixes
+npm install @bedrock/express-browser-fixes
 ```
 
 ### Development
@@ -35,7 +35,7 @@ npm install
 ## Usage
 
 ```js
-import 'bedrock-express-browser-fixes';
+import '@bedrock/express-browser-fixes';
 ```
 
 ## Contribute

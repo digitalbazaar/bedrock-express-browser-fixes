@@ -1,8 +1,9 @@
 {
-  "name": "bedrock-express-browser-fixes",
+  "name": "@bedrock/express-browser-fixes",
   "version": "1.1.1-0",
+  "type": "module",
   "description": "A Bedrock module for browser fixes.",
-  "main": "./lib",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "eslint ."
   },
@@ -23,21 +24,22 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-express-browser-fixes",
   "dependencies": {
-    "esm": "^3.2.25",
     "on-headers": "^1.0.2"
   },
   "peerDependencies": {
-    "bedrock": "^4.4.3",
-    "bedrock-express": "^6.3.0"
+    "@bedrock/core": "^5.0.0",
+    "@bedrock/express": "^7.0.0"
   },
   "directories": {
     "lib": "./lib"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-digitalbazaar": "^2.6.1"
+    "eslint": "^7.32.0",
+    "eslint-config-digitalbazaar": "^2.8.0",
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "jsdoc-to-markdown": "^7.1.1"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   }
 }

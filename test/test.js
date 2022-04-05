@@ -1,11 +1,9 @@
-/*
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+/*!
+ * Copyright (c) 2021-2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
-
-const bedrock = require('bedrock');
-require('bedrock-express');
-require('bedrock-express-browser-fixes');
+import * as bedrock from '@bedrock/core';
+import '@bedrock/express';
+import '@bedrock/express-browser-fixes';
 
 bedrock.events.on('bedrock-express.configure.routes', app => {
   app.get('/test', (req, res) => {
@@ -19,5 +17,5 @@ bedrock.events.on('bedrock-express.configure.routes', app => {
   });
 });
 
-require('bedrock-test');
+import '@bedrock/test';
 bedrock.start();
