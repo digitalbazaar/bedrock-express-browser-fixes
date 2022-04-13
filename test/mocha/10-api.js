@@ -105,6 +105,26 @@ describe('SameSite Tests', () => {
         'SameSite=None'
     ]);
   });
+  it('Does not update SameSite for header w/o user-agent', async () => {
+    const headers = {};
+    let result;
+    let err;
+    try {
+      result = await httpClient.get(url, {agent, headers});
+    } catch(e) {
+      err = e;
+    }
+    should.exist(result);
+    should.not.exist(err);
+    const cookie = result.headers.get('set-cookie').split(',')
+      .map(c => c.trimStart());
+    cookie.should.eql([
+      '_csrf=S2deWMA5zpIdea2yQljsHCdh; Path=/; Secure; SameSite=Strict',
+      'sid=s%3AjqFd8RlkzPVvjBAbY6U4k9P6_FW31NLP.JW6Zpp7Rnrbxbp' +
+        'rjS%2FvvIp%2BLshX4UbXHvIMaCRv1IJA; Path=/; HttpOnly; Secure; ' +
+        'SameSite=None'
+    ]);
+  });
   it('Does not update SameSite for Chrome', async () => {
     const headers = {
       'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 ' +

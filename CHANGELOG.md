@@ -1,5 +1,10 @@
 # bedrock-express-browser-fixes ChangeLog
 
+## 2.0.1 - 2022-04-xx
+
+### Fixed
+- Handle case where no `user-agent` header is specified.
+
 ## 2.0.0 - 2022-04-05
 
 ### Changed
