@@ -2,10 +2,8 @@
  * Copyright (c) 2020-2022 Digital Bazaar, Inc. All rights reserved.
  */
 import {config} from '@bedrock/core';
-import {createRequire} from 'module';
-import https from 'https';
-const require = createRequire(import.meta.url);
-const {httpClient} = require('@digitalbazaar/http-client');
+import {httpClient} from '@digitalbazaar/http-client';
+import https from 'node:https';
 
 const agent = new https.Agent({rejectUnauthorized: false});
 const url = config.server.baseUri + '/test';
