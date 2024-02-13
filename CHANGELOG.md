@@ -1,5 +1,10 @@
 # bedrock-express-browser-fixes ChangeLog
 
+## 3.1.0 - 2024-mm-dd
+
+### Changed
+- Open Source under BSD-3-Clause license.
+
 ## 3.0.0 - 2022-04-28
 
 ### Changed
