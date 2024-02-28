@@ -1,6 +1,6 @@
 {
   "name": "@bedrock/express-browser-fixes",
-  "version": "3.0.1-0",
+  "version": "3.1.0",
   "type": "module",
   "description": "A Bedrock module for browser fixes.",
   "license": "Apache-2.0",
