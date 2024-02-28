@@ -3,7 +3,7 @@
 ## 3.1.0 - 2024-mm-dd
 
 ### Changed
-- Open Source under BSD-3-Clause license.
+- Relicense under the Apache-2.0 license.
 
 ## 3.0.0 - 2022-04-28
 
